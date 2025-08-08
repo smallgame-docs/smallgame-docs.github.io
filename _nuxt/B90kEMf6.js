@@ -1,0 +1,1 @@
+import{_ as a,c as o,o as s,s as n}from"./DuOU9viQ.js";const r={},t={style:{color:"aquamarine"}};function c(e,_){return s(),o("div",t,[n(e.$slots,"default")])}const l=Object.assign(a(r,[["render",c]]),{__name:"ParamInfo"});export{l as default};

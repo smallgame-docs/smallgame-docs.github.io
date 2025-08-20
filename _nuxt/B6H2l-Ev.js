@@ -1,0 +1,1 @@
+import{_ as s,c as t,o,s as c}from"./CqK67r45.js";const n={},a={class:"list-of-items"};function r(e,_){return o(),t("div",a,[c(e.$slots,"default",{},void 0,!0)])}const i=Object.assign(s(n,[["render",r],["__scopeId","data-v-0572b82e"]]),{__name:"List"});export{i as default};

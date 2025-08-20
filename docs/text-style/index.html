@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style id="nuxt-ui-colors">@layer base {
+  :root {
+  --ui-color-primary-50: var(--color-green-50, oklch(98.2% 0.018 155.826));
+  --ui-color-primary-100: var(--color-green-100, oklch(96.2% 0.044 156.743));
+  --ui-color-primary-200: var(--color-green-200, oklch(92.5% 0.084 155.995));
+  --ui-color-primary-300: var(--color-green-300, oklch(87.1% 0.15 154.449));
+  --ui-color-primary-400: var(--color-green-400, oklch(79.2% 0.209 151.711));
+  --ui-color-primary-500: var(--color-green-500, oklch(72.3% 0.219 149.579));
+  --ui-color-primary-600: var(--color-green-600, oklch(62.7% 0.194 149.214));
+  --ui-color-primary-700: var(--color-green-700, oklch(52.7% 0.154 150.069));
+  --ui-color-primary-800: var(--color-green-800, oklch(44.8% 0.119 151.328));
+  --ui-color-primary-900: var(--color-green-900, oklch(39.3% 0.095 152.535));
+  --ui-color-primary-950: var(--color-green-950, oklch(26.6% 0.065 152.934));
+  --ui-color-secondary-50: var(--color-blue-50, oklch(97% 0.014 254.604));
+  --ui-color-secondary-100: var(--color-blue-100, oklch(93.2% 0.032 255.585));
+  --ui-color-secondary-200: var(--color-blue-200, oklch(88.2% 0.059 254.128));
+  --ui-color-secondary-300: var(--color-blue-300, oklch(80.9% 0.105 251.813));
+  --ui-color-secondary-400: var(--color-blue-400, oklch(70.7% 0.165 254.624));
+  --ui-color-secondary-500: var(--color-blue-500, oklch(62.3% 0.214 259.815));
+  --ui-color-secondary-600: var(--color-blue-600, oklch(54.6% 0.245 262.881));
+  --ui-color-secondary-700: var(--color-blue-700, oklch(48.8% 0.243 264.376));
+  --ui-color-secondary-800: var(--color-blue-800, oklch(42.4% 0.199 265.638));
+  --ui-color-secondary-900: var(--color-blue-900, oklch(37.9% 0.146 265.522));
+  --ui-color-secondary-950: var(--color-blue-950, oklch(28.2% 0.091 267.935));
+  --ui-color-success-50: var(--color-green-50, oklch(98.2% 0.018 155.826));
+  --ui-color-success-100: var(--color-green-100, oklch(96.2% 0.044 156.743));
+  --ui-color-success-200: var(--color-green-200, oklch(92.5% 0.084 155.995));
+  --ui-color-success-300: var(--color-green-300, oklch(87.1% 0.15 154.449));
+  --ui-color-success-400: var(--color-green-400, oklch(79.2% 0.209 151.711));
+  --ui-color-success-500: var(--color-green-500, oklch(72.3% 0.219 149.579));
+  --ui-color-success-600: var(--color-green-600, oklch(62.7% 0.194 149.214));
+  --ui-color-success-700: var(--color-green-700, oklch(52.7% 0.154 150.069));
+  --ui-color-success-800: var(--color-green-800, oklch(44.8% 0.119 151.328));
+  --ui-color-success-900: var(--color-green-900, oklch(39.3% 0.095 152.535));
+  --ui-color-success-950: var(--color-green-950, oklch(26.6% 0.065 152.934));
+  --ui-color-info-50: var(--color-blue-50, oklch(97% 0.014 254.604));
+  --ui-color-info-100: var(--color-blue-100, oklch(93.2% 0.032 255.585));
+  --ui-color-info-200: var(--color-blue-200, oklch(88.2% 0.059 254.128));
+  --ui-color-info-300: var(--color-blue-300, oklch(80.9% 0.105 251.813));
+  --ui-color-info-400: var(--color-blue-400, oklch(70.7% 0.165 254.624));
+  --ui-color-info-500: var(--color-blue-500, oklch(62.3% 0.214 259.815));
+  --ui-color-info-600: var(--color-blue-600, oklch(54.6% 0.245 262.881));
+  --ui-color-info-700: var(--color-blue-700, oklch(48.8% 0.243 264.376));
+  --ui-color-info-800: var(--color-blue-800, oklch(42.4% 0.199 265.638));
+  --ui-color-info-900: var(--color-blue-900, oklch(37.9% 0.146 265.522));
+  --ui-color-info-950: var(--color-blue-950, oklch(28.2% 0.091 267.935));
+  --ui-color-warning-50: var(--color-yellow-50, oklch(98.7% 0.026 102.212));
+  --ui-color-warning-100: var(--color-yellow-100, oklch(97.3% 0.071 103.193));
+  --ui-color-warning-200: var(--color-yellow-200, oklch(94.5% 0.129 101.54));
+  --ui-color-warning-300: var(--color-yellow-300, oklch(90.5% 0.182 98.111));
+  --ui-color-warning-400: var(--color-yellow-400, oklch(85.2% 0.199 91.936));
+  --ui-color-warning-500: var(--color-yellow-500, oklch(79.5% 0.184 86.047));
+  --ui-color-warning-600: var(--color-yellow-600, oklch(68.1% 0.162 75.834));
+  --ui-color-warning-700: var(--color-yellow-700, oklch(55.4% 0.135 66.442));
+  --ui-color-warning-800: var(--color-yellow-800, oklch(47.6% 0.114 61.907));
+  --ui-color-warning-900: var(--color-yellow-900, oklch(42.1% 0.095 57.708));
+  --ui-color-warning-950: var(--color-yellow-950, oklch(28.6% 0.066 53.813));
+  --ui-color-error-50: var(--color-red-50, oklch(97.1% 0.013 17.38));
+  --ui-color-error-100: var(--color-red-100, oklch(93.6% 0.032 17.717));
+  --ui-color-error-200: var(--color-red-200, oklch(88.5% 0.062 18.334));
+  --ui-color-error-300: var(--color-red-300, oklch(80.8% 0.114 19.571));
+  --ui-color-error-400: var(--color-red-400, oklch(70.4% 0.191 22.216));
+  --ui-color-error-500: var(--color-red-500, oklch(63.7% 0.237 25.331));
+  --ui-color-error-600: var(--color-red-600, oklch(57.7% 0.245 27.325));
+  --ui-color-error-700: var(--color-red-700, oklch(50.5% 0.213 27.518));
+  --ui-color-error-800: var(--color-red-800, oklch(44.4% 0.177 26.899));
+  --ui-color-error-900: var(--color-red-900, oklch(39.6% 0.141 25.723));
+  --ui-color-error-950: var(--color-red-950, oklch(25.8% 0.092 26.042));
+  --ui-color-neutral-50: var(--color-slate-50, oklch(98.4% 0.003 247.858));
+  --ui-color-neutral-100: var(--color-slate-100, oklch(96.8% 0.007 247.896));
+  --ui-color-neutral-200: var(--color-slate-200, oklch(92.9% 0.013 255.508));
+  --ui-color-neutral-300: var(--color-slate-300, oklch(86.9% 0.022 252.894));
+  --ui-color-neutral-400: var(--color-slate-400, oklch(70.4% 0.04 256.788));
+  --ui-color-neutral-500: var(--color-slate-500, oklch(55.4% 0.046 257.417));
+  --ui-color-neutral-600: var(--color-slate-600, oklch(44.6% 0.043 257.281));
+  --ui-color-neutral-700: var(--color-slate-700, oklch(37.2% 0.044 257.287));
+  --ui-color-neutral-800: var(--color-slate-800, oklch(27.9% 0.041 260.031));
+  --ui-color-neutral-900: var(--color-slate-900, oklch(20.8% 0.042 265.755));
+  --ui-color-neutral-950: var(--color-slate-950, oklch(12.9% 0.042 264.695));
+  }
+  :root, .light {
+  --ui-primary: var(--ui-color-primary-500);
+  --ui-secondary: var(--ui-color-secondary-500);
+  --ui-success: var(--ui-color-success-500);
+  --ui-info: var(--ui-color-info-500);
+  --ui-warning: var(--ui-color-warning-500);
+  --ui-error: var(--ui-color-error-500);
+  }
+  .dark {
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-secondary: var(--ui-color-secondary-400);
+  --ui-success: var(--ui-color-success-400);
+  --ui-info: var(--ui-color-info-400);
+  --ui-warning: var(--ui-color-warning-400);
+  --ui-error: var(--ui-color-error-400);
+  }
+}</style><style>:root{--data-layout-bg-color:#333;--data-layout-fg-color:#ccc;--data-page-bg-color:#333;--data-page-br-color:#353535;--data-page-sw-color:#282828;--data-ts-keyword-color:#2959b4;--data-ts-base-type-color:#355da7;--data-ts-class-color:#77a193;--data-ts-type-color:#608d7e;--data-ts-method-color:#ebebeb;--data-ts-string-color:#5f2152;--data-ts-method-self-color:#777;--data-ts-prop-getter-color:#001581;--data-ts-prop-setter-color:#051;--data-ts-prop-text-color:#bbb}::-webkit-scrollbar{height:6px;width:6px}::-webkit-scrollbar-track{background:#333;border-radius:8px}::-webkit-scrollbar-thumb{background:#333}::-webkit-scrollbar-thumb:hover{background:#373d55}::-webkit-scrollbar-corner{background:#282828}*{scroll-behavior:smooth}:hover::-webkit-scrollbar-thumb{background:#444}:hover::-webkit-scrollbar-track{background:#2d2d2d}body{background-color:var(--data-layout-bg-color);color:var(--data-layout-fg-color);display:flex;font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:14px;height:100%;justify-content:center;overflow:hidden;width:100%}body .root-layout{display:flex;flex-direction:column;gap:20px}body .root-layout .page{border:1px solid var(--data-page-br-color);border-radius:.25em;box-shadow:1px 2px 60px var(--data-page-sw-color);display:flex;gap:12px;height:90vh;width:70vw}.keyword{color:var(--data-ts-keyword-color)}.ts-base{color:var(--data-ts-base-type-color)}.ts-class{color:var(--data-ts-class-color);font-weight:600}.ts-type-intf{color:var(--data-ts-type-color)}.ts-method{color:var(--data-ts-method-color);font-weight:600}.ts-string{color:var(--data-ts-string-color)}.ts-self{color:var(--data-ts-method-self-color);font-size:.8em}.accessors p{display:flex;gap:4px}.accessors .ts-getter,.accessors .ts-setter{border-radius:12px;color:var(--data-ts-prop-text-color);font-size:.7em;padding:4px}.accessors .ts-getter{background-color:var(--data-ts-prop-getter-color)}.accessors .ts-setter{background-color:var(--data-ts-prop-setter-color)}.op-colon,.op-comma{margin-right:8px}.op-br-o{margin-right:2px}.op-br-c{margin-left:2px}.op-ret{font-weight:900;margin-left:4px;margin-right:4px}h1,h1 a,h2,h2 a,h3,h3 a,h4,h4 a,h5,h5 a,h6,h6 a{color:#a1a1a1}h1{font-size:1.6em}h2{font-size:1.2em;font-weight:400}menu{padding:0}menu,ul{margin:0}ul{list-style:none;padding:0 0 0 .6em}a{color:#ccc;text-decoration:none}a:hover{color:#eee}p{margin:0;padding:0}</style><style>.main-menu{display:flex;justify-content:center;margin-top:.3em;width:100%}.main-menu ul{display:flex;gap:4px;padding:0}.main-menu ul li a{border-bottom:2px solid #595959;border-radius:1px;color:#ccc;font-size:1.2em;padding:6px 12px;text-decoration:none}.main-menu ul li a:is(.router-link-active){border-color:#18b338}</style><style>.page-content{display:flex;gap:1.2em;padding:2em .6em 2em 1.2em;width:100%}.page-content .doc-menu-content{border:2px solid #3f3f3f;border-radius:4px;display:flex;flex-direction:column;padding:8px;width:clamp(170px,10vw,10vw)}.page-content .doc-menu-content h1{align-self:center}@media screen and (width < 600px){.page-content{flex-direction:column}}.page-content article{flex:1;height:calc-size(auto,size);overflow:auto;padding-right:.6em;scroll-padding-bottom:20px}.page-content article h1,.page-content article h2{background-color:#333;margin:0;padding:8px 0;position:sticky;top:0}.page-content article h1{z-index:1}.page-content article h2{top:calc(1.6em + 8px);z-index:2}</style><style>.doc-menu[data-v-7644bf8c]{overflow:auto}@media screen and (width < 600px){.doc-menu[data-v-7644bf8c]{height:10vh}}.doc-menu ul li[data-v-7644bf8c]{display:flex;gap:2px;padding:4px}.doc-menu ul li a[data-v-7644bf8c]{color:#ccc;display:flex;font-size:1.1em;padding-left:4px;width:100%}.doc-menu ul li .selector[data-v-7644bf8c]{height:auto;width:4px}.doc-menu ul li[data-v-7644bf8c]:has(>.router-link-active){background-color:#383838;border-radius:3px}.doc-menu ul li:has(>.router-link-active) a[data-v-7644bf8c]{color:#fff}.doc-menu ul li:has(>.router-link-active) .selector[data-v-7644bf8c]{background-color:#191}</style><link rel="stylesheet" href="/_nuxt/entry.DgqhUaQg.css" crossorigin><link rel="stylesheet" href="/_nuxt/default.1fAogxCl.css" crossorigin><link rel="preload" as="fetch" crossorigin="anonymous" href="/docs/text-style/_payload.json?fc863a08-8251-49bd-be0b-260224a219ea"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/CqK67r45.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/BdIvJIhp.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/Cz2V0SoK.js"><link rel="preload" as="fetch" fetchpriority="low" crossorigin="anonymous" href="/_nuxt/builds/meta/fc863a08-8251-49bd-be0b-260224a219ea.json"><link rel="prefetch" as="style" crossorigin href="/_nuxt/_...D74RBJ5m.css"><link rel="prefetch" as="script" crossorigin href="/_nuxt/CMSUlBOf.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/Datgdj_o.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/C41n0Poo.js"><script type="module" src="/_nuxt/CqK67r45.js" crossorigin></script><script>"use strict";(()=>{const t=window,e=document.documentElement,c=["dark","light"],n=getStorageValue("localStorage","nuxt-color-mode")||"system";let i=n==="system"?u():n;const r=e.getAttribute("data-color-mode-forced");r&&(i=r),l(i),t["__NUXT_COLOR_MODE__"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=""+o+"",a="";e.classList?e.classList.add(s):e.className+=" "+s,a&&e.setAttribute("data-"+a,o)}function d(o){const s=""+o+"",a="";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,"g"),""),a&&e.removeAttribute("data-"+a)}function f(o){return t.matchMedia("(prefers-color-scheme"+o+")")}function u(){if(t.matchMedia&&f("").media!=="not all"){for(const o of c)if(f(":"+o).matches)return o}return"light"}})();function getStorageValue(t,e){switch(t){case"localStorage":return window.localStorage.getItem(e);case"sessionStorage":return window.sessionStorage.getItem(e);case"cookie":return getCookie(e);default:return null}}function getCookie(t){const c=("; "+window.document.cookie).split("; "+t+"=");if(c.length===2)return c.pop()?.split(";").shift()}</script></head><body><div id="__nuxt" class="isolate"><div class="app"><div class="root-layout"><menu class="main-menu"><ul><li><a href="/" class="">Home</a></li><li><a href="/docs/" class="router-link-active">Documentations</a></li></ul></menu><div class="page"><!--[--><div class="page-content"><div class="doc-menu-content"><h1>Documentation</h1><menu class="doc-menu" data-v-7644bf8c><ul data-v-7644bf8c><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/" class="" data-v-7644bf8c>Introdution</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/installation" class="" data-v-7644bf8c>Installation</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/get-started" class="" data-v-7644bf8c>Get Started</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/animation" class="" data-v-7644bf8c>Animation</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/animator" class="" data-v-7644bf8c>Animator</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/transition" class="" data-v-7644bf8c>AnimationTransition</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/assets" class="" data-v-7644bf8c>Assets</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/game" class="" data-v-7644bf8c>Game</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/game-events" class="" data-v-7644bf8c>GameEvents</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/gameloop" class="" data-v-7644bf8c>gameloop</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/group" class="" data-v-7644bf8c>Group</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/keys" class="" data-v-7644bf8c>Keys</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/pixel-mask" class="" data-v-7644bf8c>PixelMask</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/point" class="" data-v-7644bf8c>Point</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/rect" class="" data-v-7644bf8c>Rect</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/shape-style" class="" data-v-7644bf8c>ShapeStyle</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/size" class="" data-v-7644bf8c>Size</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/sketch" class="" data-v-7644bf8c>Sketch</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/sprite" class="" data-v-7644bf8c>Sprite</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/surface" class="" data-v-7644bf8c>Surface</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a aria-current="page" href="/docs/text-style" class="router-link-active router-link-exact-active" data-v-7644bf8c>TextStyle</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/text" class="" data-v-7644bf8c>Text</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/tile-map" class="" data-v-7644bf8c>TileMap</a></li><li data-v-7644bf8c><div class="selector" data-v-7644bf8c></div><a href="/docs/time" class="" data-v-7644bf8c>Time</a></li></ul></menu></div><article><h1>TextStyle</h1><!--[--><!--]--></article></div><!--]--></div></div></div></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/docs/text-style/_payload.json?fc863a08-8251-49bd-be0b-260224a219ea">[{"state":1,"once":7,"_errors":8,"serverRendered":5,"path":10,"prerenderedAt":11},["Reactive",2],{"$scolor-mode":3},{"preference":4,"value":4,"unknown":5,"forced":6},"system",true,false,["Set"],["ShallowReactive",9],{"/docs/text-style":-1},"/docs/text-style",1755713312704]</script><script>window.__NUXT__={};window.__NUXT__.config={public:{content:{wsUrl:""},mdc:{components:{prose:true,map:{}},headings:{anchorLinks:{h1:false,h2:true,h3:true,h4:true,h5:false,h6:false}}}},app:{baseURL:"/",buildId:"fc863a08-8251-49bd-be0b-260224a219ea",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>
